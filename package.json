@@ -1,0 +1,84 @@
+{
+  "_from": "vndbjs-core",
+  "_id": "vndbjs-core@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-8LU8djpC2xO7w7LdxByjrQIai/iBnwXL8z1YCOKUKVUT4ucqtEXCcej0076Fm1YakRPYggBtISCKjQq/pixTDA==",
+  "_location": "/vndbjs-core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "vndbjs-core",
+    "name": "vndbjs-core",
+    "escapedName": "vndbjs-core",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vndbjs-core/-/vndbjs-core-1.0.0.tgz",
+  "_shasum": "984c5076a31233ab7b83427b0fec2e5faa6db815",
+  "_spec": "vndbjs-core",
+  "_where": "/home/saya/vndb-js",
+  "author": {
+    "name": "Arbauman",
+    "email": "arbauman207@gmail.com"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/arbauman/vndbjs-core/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "debug": "^3.1.0",
+    "defaults-shallow": "^0.1.0",
+    "generic-pool": "^3.1.7",
+    "limiter": "^1.1.0",
+    "shortid": "^2.2.8"
+  },
+  "deprecated": false,
+  "description": "A lightweight client for communicating with the Visual Novel Database",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "docdash": "^0.4.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "istanbul": "^1.0.0-alpha.2",
+    "jsdoc": "^3.4.3",
+    "mocha": "^3.2.0",
+    "mockery": "^2.1.0",
+    "sinon": "^4.1.3"
+  },
+  "files": [
+    "package.json",
+    "readme.md",
+    "license",
+    "/src"
+  ],
+  "homepage": "https://gitlab.com/arbauman/vndbjs-core/blob/master/readme.md",
+  "keywords": [
+    "vndb",
+    "visual",
+    "novel",
+    "database",
+    "api"
+  ],
+  "license": "MIT",
+  "main": "/src/Vndb.js",
+  "name": "vndbjs-core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://arbauman@gitlab.com/arbauman/vndbjs-core.git"
+  },
+  "scripts": {
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
+    "docs": "jsdoc --configure .jsdoc.json --verbose",
+    "lint": "eslint src/",
+    "start": "node src/vndb.js",
+    "test": "npm run lint && npm run cover && npm run docs"
+  },
+  "version": "1.0.0"
+}
